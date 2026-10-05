@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+         body{
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            height: 400px;
+            width:60%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+            border: 2px solid black;
+            background-image:linear-gradient(green,lightgreen,pink);
+        }
+        h1{
+            color:red;
+        }
+        input:active{
+            background-color: pink;
+            border-radius: 10px;
+        }
+        input{
+            border-radius: 10px;
+        }
+        button{
+            background-color: orange;
+            border-radius: 10px;
+            width: 100px;
+        }
+        button:hover{
+            background-color: rgb(84, 215, 202);
+             transform: scale(1.06);
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+    <h1>Wlecome to addition of three numbers</h1>
+    <label>Enter n1 :</label>
+    <input type="text" id="n1"><br>
+    <label>Enter n2 :</label>
+    <input type="text" id="n2"><br>
+    <label>Enter n3 :</label>
+    <input type="text" id="n3"><br>
+    <button onclick="addnum()">Addition Num</button>
+    <script type="text/javascript" src="additio.js"></script>
+    </section>
+</body>
+</html>

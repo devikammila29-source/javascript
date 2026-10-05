@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addition()
+        {
+            var n1 =parseInt(document.getElementById("n1").value)
+            var n2 =parseInt(document.getElementById("n2").value)
+            var sum =n1+n2
+             var sum =document.getElementById("n3").value=sum;
+        }
+         function subtration()
+        {
+            var n1 =parseInt(document.getElementById("n1").value)
+            var n2 =parseInt(document.getElementById("n2").value)
+            var sum =n1-n2
+             var sum =document.getElementById("n3").value=sum;
+        }
+           function division()
+        {
+            var n1 =parseInt(document.getElementById("n1").value)
+            var n2 =parseInt(document.getElementById("n2").value)
+            var sum =n1/n2
+             var sum =document.getElementById("n3").value=sum;
+        }
+         function multiply()
+        {
+            var n1 =parseInt(document.getElementById("n1").value)
+            var n2 =parseInt(document.getElementById("n2").value)
+            var sum =n1*n2
+             var sum =document.getElementById("n3").value=sum;
+        }
+         function modules()
+        {
+            var n1 =parseInt(document.getElementById("n1").value)
+            var n2 =parseInt(document.getElementById("n2").value)
+            var sum =n1%n2
+             var sum =document.getElementById("n3").value=sum;
+        }
+         function expo()
+        {
+            var n1 =parseInt(document.getElementById("n1").value)
+            var n2 =parseInt(document.getElementById("n2").value)
+            var sum =n1**n2
+            var sum =document.getElementById("n3").value=sum;
+        }
+    </script>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container{
+            height: 500px;
+            width: 50%;
+            border: 2px solid black;
+            background-image: linear-gradient(rgb(228, 210, 213),rgb(207, 240, 207),rgb(191, 191, 230),skyblue);
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            flex-direction: column;
+        }
+        button{
+            width:90px;
+            height: 25px;
+            border-radius: 10px;
+            margin: 5px;
+            background-color:rgb(196, 225, 229);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mini calculater</h1>
+    <label>Enter n1 :</label>
+    <input type="text" name="" id="n1">
+     <label>Enter n2 :</label>
+     <input type="text" name="" id="n2">
+     <label>Result</label>
+     <input type="text" name="" id="n3">
+     <button onclick="addition()">Add</button>
+     <button onclick="subtration()">Sub</button>
+     <button onclick="division()">div</button>
+     <button onclick="multiply()">mult</button>
+     <button onclick="modules()">mod</button>
+     <button onclick="expo()">expo</button>
+     </div>
+</body>
+</html>
